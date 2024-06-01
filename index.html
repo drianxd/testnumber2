@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <title>TestNumber1</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="bx bx-crown icon"></i>
+                            <div class="title">Administrator</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showPanel()">
+                            <i class="bx bx-signal-5 icon"></i>
+                            <div class="menu">Panel</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showMembers()">
+                            <i class="bx bx-male-female icon"></i>
+                            <div class="menu">Members</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showCommissions()">
+                            <i class="bx bx-edit-alt icon"></i>
+                            <div class="menu">Commisions</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="showTasks()">
+                            <i class="bx bx-calendar-check icon"></i>
+                            <div class="menu">Tasks</div>
+                        </a>
+                    </li> 
+                         <li class="">
+                            <a href="log-out.php">
+                                <i class="bx bx-log-out icon"></i>
+                                <div class="menu">Logout</div>
+                            </a>
+                         </li>
+                    </div>
+                </ul>
+             </div>
+             <div class="main">
+                <div class="top-bar">
+                    <div class="search">
+                        <input type="text" name="search" placeholder="Search...">
+                        <label for="search"><i class="bx bx-search icon">
+                                </i></label>
+                    </div>
+                    <i class="bx bx-bell icon"></i>
+                    <div class="admin">
+                        <img src="catto.png" alt="">
+                    </div>
+               </div>
+           </div>
+           <div class="main" id="administrator-panel">
+            <div class="cards-panel">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number-panel">7</div>
+                        <div class="card-panel-name">Clients</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bx bx-group"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number-panel">18</div>
+                        <div class="card-panel-name">Announcements</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bx bx-clinic"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number-panel">15</div>
+                        <div class="card-panel-name">Inventory</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bx bx-first-aid"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="tables-panel">
+                <div class="scheduled-appointments">
+                    <div class="heading">
+                        <h2>Scheduled Appointments</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table class="appointments">
+                        <thead>
+                            <td>Name</td>
+                            <td>Date & Time</td>
+                            <td>Service</td>
+                            <td>Status</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Adrian Leonardo</td>
+                                <td>31-05-24 | 13:30:00</td>
+                                <td>Inventory</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Member #2</td>
+                                <td>05-02-24 | 11:30:00</td>
+                                <td>Announcements</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Member #3</td>
+                                <td>05-04-24 | 11:00:00</td>
+                                <td>Inventory</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Member #4</td>
+                                <td>05-04-24 | 12:30:00</td>
+                                <td>Announcements</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Member #5</td>
+                                <td>05-06-24 | 10:30:00</td>
+                                <td>Announcements</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="staff-visiting">
+                    <div class="heading">
+                        <h2>Staff Visiting</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table class="visiting">
+                        <thead>
+                            <td>Photo</td>
+                            <td>Name</td>
+                            <td>Clinic Time</td>
+                            <td>Detail</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="img-box-small">
+                                        <img src="images/profile1.png" alt="">
+                                    </div>
+                                </td>
+                                <td>Staff</td>
+                                <td>10:00:00</td>
+                                <td><i class="bx bx-id-card icon"></i></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="img-box-small">
+                                        <img src="images/profile1.png" alt="">
+                                    </div>
+                                </td>
+                                <td>Staff</td>
+                                <td>10:00:00</td>
+                                <td><i class="bx bx-id-card icon"></i></td>
+                            </tr>
+                                 <td>
+                                    <div class="img-box-small">
+                                        <img src="images/profile1.png" alt="">
+                                    </div>
+                                </td>
+                                <td>Staff</td>
+                                <td>10:00:00</td>
+                                <td><i class="bx bx-id-card icon"></i></td>
+                            </tr>
+                            <td>
+                                    <div class="img-box-small">
+                                        <img src="images/profile1.png" alt="">
+                                    </div>
+                                </td>
+                                <td>Staff</td>
+                                <td>10:00:00</td>
+                                <td><i class="bx bx-id-card icon"></i></td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="main" id="members">
+            <div class="card-members">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number-members">2</div>
+                        <div class="card-members-name">Total Members</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bx bx-group"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number-members">3</div>
+                        <div class="card-members-name">Commissions</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bx bx-envelope"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number-members">25</div>
+                        <div class="card-members-name">Tasks</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="bx bx-calendar-check"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="tables-members">
+                <div class="user-accounts">
+                    <div class="heading">
+                        <h2>User Accounts</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table class="accounts">
+                        <thead>
+                            <td>Profile</td>
+                            <td>Name</td>
+                            <td>Email Address</td>
+                            <td>Status</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="img-box-small">
+                                        <img src="displaypicture.jpg" alt="">
+                                    </div>
+                                </td>
+                                <td>Adrian</td>
+                                <td>jadrianleonardo@gmail.com</td>
+                                <td>Verified</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="img-box-small">
+                                        <img src="images/profile1.png" alt="">
+                                    </div>
+                                </td>
+                                <td>User2</td>
+                                <td>example_user2@example.com</td>
+                                <td>Verified</td>
+                            </tr>
+                                 <td>
+                                    <div class="img-box-small">
+                                        <img src="images/profile1.png" alt="">
+                                    </div>
+                                </td>
+                                <td>User3</td>
+                                <td>example_user3@example.com</td>
+                                <td>Verified</td>
+                            </tr>
+                            <td>
+                                    <div class="img-box-small">
+                                        <img src="images/profile1.png" alt="">
+                                    </div>
+                                </td>
+                                <td>User4</td>
+                                <td>example_user4@example.com</td>
+                                <td>Verified</td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="main" id="commissions">
+            <div class="table-commissions">
+                <div class="user-commissions">
+                    <div class="heading">
+                        <h2>Commissions</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table class="commissions">
+                        <thead>
+                            <td>Name</td>
+                            <td>Email Address</td>
+                            <td>Message</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Adrian</td>
+                                <td>jadrianleonardo@gmail.com</td>
+                                <td>[message]</td>
+                                <td>
+                            </tr>
+                            <tr>
+                                <td>Member #2</td>
+                                <td>example_user2@example.com</td>
+                                <td>[message]</td>
+                                <td>
+                            </tr>
+                            <tr>
+                                <td>Member #3</td>
+                                <td>example_user3@example.com</td>
+                                <td>[message]</td>
+                                <td>
+                            </tr>
+                            <tr>
+                                <td>Member #4</td>
+                                <td>example_user4@example.com</td>
+                                <td>[message]</td>
+                                <td>
+                            </tr>
+                            <tr>
+                                <td>Member #5</td>
+                                <td>example_user5@example.com</td>
+                                <td>[message]</td>
+                                <td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="main" id="tasks">
+            <div class="tables-tasks">
+                <div class="announcements-tasks">
+                    <div class="heading">
+                        <h2>Announcements</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table class="announcements-appointments">
+                        <thead>
+                            <td>Name</td>
+                            <td>Date & Time</td>
+                            <td>Status</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Adrian Leonardo</td>
+                                <td>31-05-24 | 13:30:00</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Member #2</td>
+                                <td>05-02-24 | 11:30:00</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Member #3</td>
+                                <td>05-04-24 | 11:00:00</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Member #4</td>
+                                <td>05-04-24 | 12:30:00</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Member #5</td>
+                                <td>05-06-24 | 10:30:00</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="inventory-tasks">
+                    <div class="heading">
+                        <h2>Inventory</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table class="inventory-appointments">
+                        <thead>
+                            <td>Name</td>
+                            <td>Date & Time</td>
+                            <td>Status</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Adrian Leonardo</td>
+                                <td>31-05-24 | 13:30:00</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Member #2</td>
+                                <td>05-02-24 | 11:30:00</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Member #3</td>
+                                <td>05-04-24 | 11:00:00</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Member #4</td>
+                                <td>05-04-24 | 12:30:00</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Member #5</td>
+                                <td>05-06-24 | 10:30:00</td>
+                                <td>
+                                    <i class="bx bx-user-check icon"></i>
+                                    <i class="bx bx-bowl-hot icon"></i>
+                                    <i class="bx bx-user-x icon"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

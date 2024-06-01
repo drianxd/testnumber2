@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+
+.sidebar{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(45deg, #A020F0, #8a0106);
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+
+.sidebar ul li{
+    width: 100%;
+    list-style: none;
+}
+
+
+.sidebar ul li:hover{
+    background: #0D203B;
+}
+
+
+.sidebar ul li:first-child{
+    line-height: 60px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #fff;
+}
+.sidebar ul li:first-child:hover{
+    background: none;
+}
+
+
+.sidebar ul li a{
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+
+.sidebar ul li a i{
+    min-width: 60px;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.sidebar .title{
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    min-height: 100vh;
+    left: 300px;
+    background: #fff;
+}
+
+
+.top-bar{
+    position: fixed;
+    height: 60px;
+    width: calc(100% - 300px);
+    background: #fff;
+    display: grid;
+    grid-template-columns: 10fr 0.4fr 1fr;
+    grid-gap: 5px;
+    align-items: center;
+    color: #0D203B;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.top-bar .search{
+    position: relative;
+    max-width: 400px;
+}
+
+
+.search input{
+    width: 100%;
+    min-width: 128px;
+    height: 40px;
+    padding: 0 40px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: #f5f5f5;
+}
+
+
+.search i{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+.admin{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    right: 10px
+}
+
+
+img{
+    position: absolute;
+    width: 180%;
+    height: 85%;
+    top: 3px;
+    left: 0;
+}
+
+
+.cards-panel{
+    margin-top: 60px;
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+}
+
+
+.cards-panel .card{
+    background: linear-gradient(45deg, #A020F0, #8a0106);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+.number-panel{
+    font-size: 35px;
+    font-weight: 500;
+    color:#fff
+}
+.card-panel-name{
+    color:#0D203B;
+    font-weight: 600;
+}
+
+
+.icon-box i{
+    font-size: 45px;
+    color: #0D203B;
+}
+
+
+.tables-panel{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    align-items: self-start;
+    padding: 0 20px 20px 20px;
+}
+
+
+.img-box-small{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+
+.scheduled-appointments{
+    min-height: 350px;
+    background: #f5f5f5;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.scheduled-appointments .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #0D203B;
+}
+
+
+.staff-visiting{
+    min-height: 350px;
+    background: #f5f5f5;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.staff-visiting .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #0D203B;
+}
+
+
+.card-members{
+    margin-top: 60px;
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+}
+
+
+.card-members .card{
+    background: linear-gradient(45deg, #A020F0, #8a0106);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+.number-members{
+    font-size: 35px;
+    font-weight: 500;
+    color:#fff
+}
+.card-members-name{
+    color:#0D203B;
+    font-weight: 600;
+}
+
+
+.tables-members{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    grid-gap: 10px;
+    align-items: self-start;
+    padding: 0px 20px 20px 20px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+
+.tables-members .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #0D203B;
+}
+
+
+.img-box-small{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden
+}
+
+
+.user-accounts{
+    min-height: 350px;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.table-commissions{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-gap: 20px;
+    align-items: self-start;
+    padding: 0 20px 20px 20px;
+    margin-top: 100px;
+}
+
+
+.user-commissions{
+    min-height: 350px;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.user-commissions .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #0D203B;
+}
+
+
+.tables-tasks{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-gap: 20px;
+    align-items: self-start;
+    padding: 0 20px 20px 20px;
+    margin-top: 100px;
+}
+
+
+.announcements-tasks{
+    min-height: 350px;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.announcements-tasks .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #0D203B;
+}
+
+
+.inventory-tasks{
+    min-height: 350px;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.inventory-tasks .heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #0D203B;
+}
+
+
+.btn{
+    padding: 5px 10px;
+    background: linear-gradient(45deg, #A020F0, #8a0106);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+table{
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+thead td{
+    font-weight: 600;
+    color: #0D203B;
+    text-align: center;
+}
+
+
+table tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+
+tbody tr:hover{
+    background: #4C4D4F;
+    color: #fff;
+}
+
+
+table tbody tr:last-child{
+    border-bottom: none;
+}
+
+
+td{
+    padding: 9px 5px;
+}
+
+
+td i{
+    padding: 7px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+
+.scheduled-appointments table tbody td:last-child{
+    white-space: nowrap;
+
+
+}
+
+
+.bx-user-check{
+    background: #A020F0;
+}
+
+
+.bx-bowl-hot{
+    background: #030405;
+}
+
+
+.bx-user-x{
+    background: #8a0106;
+}
+
+
+.bx-id-card{
+    background: #0D203B;
+}
+
+
+@media(max-width:1090px){
+    .sidebar{
+        width: 60px;
+    }
+    .main{
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+    .top-bar{
+        width: calc(100% - 60px);
+    }
+}
+
+
+@media(max-width:860px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tables{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media(max-width:530px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    .scheduled-appointments td:nth-child(3){
+        display: none;
+    }
+}
+
+
+@media(max-width:420px){
+    .scheduled-appointments, .staff-visiting{
+        font-size: 70%;
+        padding: 10px;
+        min-height: 200px;
+    }
+    .cards, .tables{
+        padding: 10px;
+    }
+    .search input{
+        padding: 0 10px;
+    }
+    .user{
+        width: 40px;
+        height: 40px;
+    }
+}
